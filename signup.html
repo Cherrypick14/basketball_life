@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign_up</title>  
+        <style>
+            *{
+                margin:0;
+                padding:0;
+                box-sizing: border-box;
+                outline:none;
+                font-family: 'Roboto', sans-serif;
+            }
+            body{
+                background: url("./assets/images/synthetic-basketball-court.jpg")no-repeat;
+                background-size: cover;
+                height:100vh;
+            }
+            .wrapper{
+                position:absolute;
+                top:50%;
+                transform: translateY(-50%);
+                padding:0 20px;
+                width:100%;
+            }
+            .wrapper-container{
+                max-width: 550px;
+                margin:0 auto;
+                background:rgba(0,0,0,0.8);
+                padding:30px;
+                border-radius:5px;
+                box-shadow: 0,0,20px;
+            }
+            .input-fields{
+                display: flex;
+                flex-direction: column;
+                margin-right:4%;
+                width:60%;
+                margin:0 auto;  
+            }
+            .input-fields .input{
+                margin:10px  0;
+                border:0;
+                background:transparent;
+                border-bottom:2px solid #c5ecc5;
+                padding:10px;
+                width:100%;
+                color:#fff;
+                margin-bottom:20px;
+            }
+            .btn{
+                background:#6595CC;
+                width:80%;
+                height:5vh;
+                font-size: 1rem;
+                font-weight:bold;
+                border-radius:5px;
+                border:1 px solid #000;
+                outline:none;
+                margin-left:30px; 
+                margin-bottom:20px;   
+            }
+            .btn:hover{
+                cursor:pointer;
+                background:#B2CAE5;
+            }
+            .btn a{
+                text-decoration: none;
+            }
+            h2{
+                margin-left:160px;
+                color:#c5ecc5;
+                text-transform: capitalize;
+            }
+            p{
+                color:#fff;
+                text-align: center;
+            }
+            p a{
+                color:#c5ecc5;
+                
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="wrapper-container">
+                <h2>Create Account</h2>
+               
+                <div class="input-fields">
+                    <input type="text" class="input" placeholder="Name" required="">
+                    <input type="email" class="input" placeholder="Email Address" required="">
+                    <input type="password" class="input" placeholder="Password" required="">
+                    <input type="text" class="input" placeholder="Location">
+                   <form>
+                    <button class="btn"><a href="players.html">Sign up</a></button>
+                    <p>By clicking the Sign Up button, you agree to our <a href="#">Terms & Condition </a>and <a href="#">Privacy Policy</a></p>
+                   </form>
+                    
+                </div>  
+            </div>
+           
+        </div>
+               
+
+    </body>
+</html>
